@@ -75,7 +75,22 @@
 
 <body>
 
-	<div id="container" style="width:85%"/>
+	<div id="container" style="width:85%"></div>
+	
+	<h3>The truth!</h3>
+	Last point in the chart has been generated using below code:<br/>
+	
+	<pre>
+	var m = moment("2017/12/13","YYYY-MM-DD");
+	series: [{
+		name: 'Pippo',		
+		data: [
+			...
+			[Date.UTC(m.get("year"),m.get("month"),m.get("date")), 5.25],
+			...
+		]
+	}]
+	</pre>
 
 </body>
 </html>
